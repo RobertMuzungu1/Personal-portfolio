@@ -1,0 +1,66 @@
+
+/*------------------------------------------------
+    Welcome Page
+-------------------------------------------------*/
+
+.author-image-large {
+    position: absolute;
+    right: 0;
+    top: 0;
+    img {
+        @include calc(height, "100vh - 4px");
+    }
+}
+
+.introduction-video {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42%;
+
+    video {
+        background-color: #000;
+        border: 5px solid #1e2530;
+        display: block;
+        height: auto;
+        max-height: 72vh;
+        width: 100%;
+    }
+}
+
+.page-welcome .page-title h3 {
+    font-size: 19px;
+    margin: 20px 0 8px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 979px) {
+    .introduction-video {
+        margin: 0 auto 35px;
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 70%;
+    }
+
+    .page-welcome .introduction-copy {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .introduction-video {
+        width: 100%;
+    }
+}
+
+// .hexagon-item {
+// 	a {
+// 		path {
+// 			fill: #59C4B4;
+// 		}
+// 	}
+// }
